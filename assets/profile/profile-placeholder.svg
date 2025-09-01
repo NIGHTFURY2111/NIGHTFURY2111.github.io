@@ -1,0 +1,26 @@
+<svg width="400" height="400" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="profile-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+    <pattern id="grid-pattern" width="20" height="20" patternUnits="userSpaceOnUse">
+      <path d="M 20 0 L 0 0 0 20" fill="none" stroke="rgba(255,255,255,0.1)" stroke-width="0.5"/>
+    </pattern>
+  </defs>
+  <circle cx="200" cy="200" r="200" fill="url(#profile-grad)" />
+  <rect width="400" height="400" fill="url(#grid-pattern)" opacity="0.3"/>
+  <circle cx="200" cy="200" r="180" fill="none" stroke="rgba(255,255,255,0.2)" stroke-width="2"/>
+  
+  <!-- Profile icon -->
+  <g transform="translate(200, 200)">
+    <!-- Head -->
+    <circle cx="0" cy="-30" r="40" fill="rgba(255,255,255,0.9)"/>
+    <!-- Body -->
+    <ellipse cx="0" cy="30" rx="60" ry="80" fill="rgba(255,255,255,0.9)"/>
+  </g>
+  
+  <!-- Text -->
+  <text x="200" y="350" font-family="Arial, sans-serif" font-size="24" font-weight="bold" fill="white" text-anchor="middle">Your Photo Here</text>
+  <text x="200" y="380" font-family="Arial, sans-serif" font-size="16" fill="rgba(255,255,255,0.8)" text-anchor="middle">Replace with your image</text>
+</svg>

@@ -1,0 +1,25 @@
+<svg width="600" height="300" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="big-one-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#6366f1;stop-opacity:1" />
+      <stop offset="100%" style="stop-color:#8b5cf6;stop-opacity:1" />
+    </linearGradient>
+  </defs>
+  <rect width="600" height="300" fill="url(#big-one-grad)" />
+  
+  <!-- Game elements -->
+  <rect x="50" y="200" width="100" height="100" fill="rgba(255,255,255,0.3)" rx="10"/>
+  <rect x="200" y="150" width="80" height="150" fill="rgba(255,255,255,0.2)" rx="5"/>
+  <rect x="350" y="180" width="120" height="120" fill="rgba(255,255,255,0.25)" rx="8"/>
+  
+  <!-- Crosshair -->
+  <g transform="translate(300, 150)">
+    <circle r="30" fill="none" stroke="rgba(255,255,255,0.6)" stroke-width="3"/>
+    <line x1="-20" y1="0" x2="20" y2="0" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+    <line x1="0" y1="-20" x2="0" y2="20" stroke="rgba(255,255,255,0.6)" stroke-width="2"/>
+  </g>
+  
+  <text x="300" y="50" font-family="Arial, sans-serif" font-size="32" font-weight="bold" fill="white" text-anchor="middle">The Big One</text>
+  <text x="300" y="80" font-family="Arial, sans-serif" font-size="18" fill="rgba(255,255,255,0.8)" text-anchor="middle">3D FPS Gameplay Demo</text>
+  <text x="300" y="270" font-family="Arial, sans-serif" font-size="14" fill="rgba(255,255,255,0.7)" text-anchor="middle">Replace with actual gameplay GIF/video</text>
+</svg>

@@ -391,7 +391,6 @@ document.addEventListener('DOMContentLoaded', () => {
     new ThemeManager();
     new Navigation();
     new ScrollAnimations();
-    new ContactForm();
     new TypingAnimation();
     new PerformanceOptimizer();
 
@@ -492,6 +491,30 @@ document.addEventListener('DOMContentLoaded', () => {
             e.preventDefault();
             document.getElementById('themeToggle').click();
         }
+    });
+
+    // Mobile touch support for project cards
+    const projectCards = document.querySelectorAll('.project-card');
+    projectCards.forEach(card => {
+        let touchStartTime;
+        
+        card.addEventListener('touchstart', () => {
+            touchStartTime = Date.now();
+            card.classList.add('touch-active');
+        });
+        
+        card.addEventListener('touchend', () => {
+            const touchDuration = Date.now() - touchStartTime;
+            // If it's a quick tap (not a scroll), toggle the active state
+            if (touchDuration < 200) {
+                card.classList.toggle('mobile-hover');
+            }
+            card.classList.remove('touch-active');
+        });
+        
+        card.addEventListener('touchcancel', () => {
+            card.classList.remove('touch-active');
+        });
     });
 
     // Add focus management for accessibility
